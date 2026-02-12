@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio  | Supporters Marketing</title>
+
+<style>
+:root {
+  --primary-dark: #0f172a;
+  --secondary-dark: #1e293b;
+  --accent-gold: #d4af37;
+  --text-light: #e5e7eb;
+  --text-muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--primary-dark);
+  color: var(--text-light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(30, 41, 59, 0.95);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-gold);
+}
+
+.hero {
+  padding: 100px 8% 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: auto;
+}
+
+.case-study {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 8%;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+.case-study:nth-child(even) {
+  flex-direction: row-reverse;
+  background: var(--secondary-dark);
+}
+
+.case-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.case-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.case-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.case-content h2 {
+  color: var(--accent-gold);
+  margin-bottom: 15px;
+}
+
+.case-content p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.metrics {
+  margin-top: 20px;
+}
+
+.metrics span {
+  display: inline-block;
+  margin-right: 25px;
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b1220;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ELITECORP</div>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Strategic Case Studies</h1>
+  <p>Every project is executed with precision, backed by data, and measured by performance.</p>
+</section>
+
+<section class="case-study">
+  <div class="case-image">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="">
+  </div>
+  <div class="case-content">
+    <h2>Enterprise Brand Transformation</h2>
+    <p><strong>Challenge:</strong> The client faced declining brand authority in a competitive market.</p>
+    <p><strong>Solution:</strong> We restructured brand positioning, redesigned visual identity, and implemented multi-channel strategy.</p>
+    <p><strong>Outcome:</strong> Significant increase in engagement, visibility, and executive-level market trust.</p>
+    <div class="metrics">
+      <span>+180% Engagement</span>
+      <span>+75% Brand Recall</span>
+    </div>
+  </div>
+</section>
+
+<section class="case-study">
+  <div class="case-image">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+  </div>
+  <div class="case-content">
+    <h2>High-Performance Digital Campaign</h2>
+    <p><strong>Challenge:</strong> Low ROI and ineffective targeting across digital platforms.</p>
+    <p><strong>Solution:</strong> Advanced analytics, precise audience segmentation, and premium creative execution.</p>
+    <p><strong>Outcome:</strong> Optimized acquisition funnel and strong conversion performance.</p>
+    <div class="metrics">
+      <span>+210% ROI</span>
+      <span>+65% Conversions</span>
+    </div>
+  </div>
+</section>
+
+<section class="case-study">
+  <div class="case-image">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+  </div>
+  <div class="case-content">
+    <h2>Enterprise Web Architecture</h2>
+    <p><strong>Challenge:</strong> Outdated infrastructure limiting scalability.</p>
+    <p><strong>Solution:</strong> Rebuilt full-stack architecture with optimized UI/UX and performance-first development.</p>
+    <p><strong>Outcome:</strong> Faster load times, higher engagement, and improved client retention.</p>
+    <div class="metrics">
+      <span>+40% Speed</span>
+      <span>+50% Retention</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 EliteCorp. All Rights Reserved.
+</footer>
+
+</body>
+</html>

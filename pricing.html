@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Supporters Marketing</title>
+
+<style>
+:root {
+  --primary-dark: #0f172a;
+  --secondary-dark: #1e293b;
+  --accent-gold: #d4af37;
+  --text-light: #e5e7eb;
+  --text-muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--primary-dark);
+  color: var(--text-light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(30,41,59,0.95);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-gold);
+}
+
+.hero {
+  padding: 100px 8% 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 8%;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--secondary-dark);
+  padding: 50px 35px;
+  border: 1px solid rgba(212,175,55,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-gold);
+}
+
+.card.featured {
+  border: 2px solid var(--accent-gold);
+}
+
+.card h2 {
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+}
+
+.btn {
+  padding: 12px 28px;
+  background: var(--accent-gold);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #b8962e;
+}
+
+.table-section {
+  background: var(--secondary-dark);
+  padding: 80px 8%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+th, td {
+  border: 1px solid rgba(212,175,55,0.2);
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  color: var(--accent-gold);
+}
+
+.addons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.addon-card {
+  background: var(--secondary-dark);
+  padding: 30px;
+  border: 1px solid rgba(212,175,55,0.2);
+}
+
+.faq {
+  background: var(--secondary-dark);
+  padding: 80px 8%;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+.faq-item h4 {
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+  padding: 80px 8%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b1220;
+  color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ELITECORP</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Premium Investment Plans</h1>
+  <p>Our pricing reflects strategy, precision, and measurable results — not shortcuts.</p>
+</section>
+
+<section class="section">
+  <div class="pricing-grid">
+
+    <div class="card">
+      <h2>Foundation</h2>
+      <div class="price">$1,500</div>
+      <ul>
+        <li>Brand Audit</li>
+        <li>Basic Strategy</li>
+        <li>Performance Report</li>
+        <li>Email Support</li>
+      </ul>
+      <button class="btn">Get Started</button>
+    </div>
+
+    <div class="card featured">
+      <h2>Growth</h2>
+      <div class="price">$3,500</div>
+      <ul>
+        <li>Advanced Strategy</li>
+        <li>Campaign Management</li>
+        <li>Analytics Dashboard</li>
+        <li>Priority Support</li>
+      </ul>
+      <button class="btn">Choose Plan</button>
+    </div>
+
+    <div class="card">
+      <h2>Enterprise</h2>
+      <div class="price">Custom</div>
+      <ul>
+        <li>Full Architecture</li>
+        <li>Market Domination Plan</li>
+        <li>Dedicated Manager</li>
+        <li>Executive Reporting</li>
+      </ul>
+      <button class="btn">Contact Us</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="table-section">
+  <h2 style="text-align:center;">Plan Comparison</h2>
+  <table>
+    <tr>
+      <th>Features</th>
+      <th>Foundation</th>
+      <th>Growth</th>
+      <th>Enterprise</th>
+    </tr>
+    <tr>
+      <td>Strategy Development</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Campaign Execution</td>
+      <td>—</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Dedicated Manager</td>
+      <td>—</td>
+      <td>—</td>
+      <td>✔</td>
+    </tr>
+  </table>
+</section>
+
+<section class="section">
+  <h2>Add-On Services</h2>
+  <div class="addons">
+    <div class="addon-card">SEO Optimization – $800</div>
+    <div class="addon-card">Premium Branding Kit – $1,200</div>
+    <div class="addon-card">Advanced Analytics Setup – $950</div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h4>Are contracts long-term?</h4>
+    <p style="color:var(--text-muted);">We offer flexible engagement models tailored to client needs.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you offer custom solutions?</h4>
+    <p style="color:var(--text-muted);">Yes. Enterprise clients receive fully customized strategies.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready to Scale With Precision?</h2>
+  <br>
+  <button class="btn">Schedule Consultation</button>
+</section>
+
+<footer>
+  © 2026 EliteCorp. All Rights Reserved.
+</footer>
+
+</body>
+</html>
