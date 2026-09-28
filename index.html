@@ -1,184 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOME  | Supporters Marketing</title>
-
-<style>
-:root {
-  --primary-dark: #0f172a;
-  --secondary-dark: #1e293b;
-  --accent-gold: #d4af37;
-  --text-light: #e5e7eb;
-  --text-muted: #94a3b8;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--primary-dark);
-  color: var(--text-light);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: rgba(30, 41, 59, 0.9);
-  backdrop-filter: blur(10px);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--accent-gold);
-  letter-spacing: 2px;
-}
-
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: var(--text-light);
-  font-size: 15px;
-  transition: 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--accent-gold);
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 10%;
-  background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9));
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: var(--text-muted);
-  font-size: 18px;
-  max-width: 600px;
-  margin: 0 auto 30px;
-}
-
-.btn {
-  padding: 12px 28px;
-  background: var(--accent-gold);
-  color: #000;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #b8962e;
-  transform: translateY(-3px);
-}
-
-.section {
-  padding: 100px 8%;
-  text-align: center;
-  background: var(--secondary-dark);
-}
-
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: var(--accent-gold);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #0b1220;
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PixelCraft Studio — premium graphic design agency creating brand identities, social media creatives, packaging, presentations and digital visuals.">
+  <meta name="keywords" content="graphic design agency, branding, logo design, social media design, packaging design, presentation design">
+  <meta name="author" content="PixelCraft Studio">
+  <meta property="og:title" content="PixelCraft Studio | Graphic Design Agency">
+  <meta property="og:description" content="We turn ideas into visual identities people remember.">
+  <meta property="og:type" content="website">
+  <title>PixelCraft Studio | Graphic Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="progress"><span id="progress"></span></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-<header>
-  <div class="logo">SUPPORTERS MARKETING</div>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="PixelCraft Studio home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>Pixel<span>Craft</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <nav id="nav">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Start a Project <span>↗</span></a>
+    </div>
+  </header>
 
-<section class="hero">
-  <div>
-    <h1>Redefining Premium Business Standards</h1>
-    <p>EliteCorp delivers high-end strategic solutions designed for visionary brands ready to dominate their market.</p>
-    <button class="btn">Explore More</button>
-  </div>
-</section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Independent creative studio</div>
+          <h1>Design that makes your <em>brand impossible to ignore.</em></h1>
+          <p>We create sharp visual identities, campaigns and digital graphics for businesses that want to look established, distinctive and ready for what's next.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore our work <span>↗</span></a>
+            <a class="button ghost" href="#contact">Tell us your idea <span>→</span></a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>80+</strong><span>Visual projects</span></div>
+            <div><strong>24h</strong><span>Fast concept starts</span></div>
+            <div><strong>Global</strong><span>Remote collaboration</span></div>
+          </div>
+        </div>
 
-<section class="section fade-in">
-  <h2>Our Philosophy</h2>
-  <p>Precision. Strategy. Excellence. We blend traditional business values with modern innovation to build timeless brands.</p>
-</section>
+        <div class="hero-art reveal delay-1">
+          <div class="art-orbit orbit-a"></div>
+          <div class="art-orbit orbit-b"></div>
+          <div class="art-card card-main">
+            <div class="card-top"><span>PC / 026</span><span>IDENTITY SYSTEM</span></div>
+            <div class="poster-word">MAKE<br><b>NOISE.</b></div>
+            <div class="poster-shape shape-one"></div>
+            <div class="poster-shape shape-two"></div>
+            <div class="card-bottom"><span>Brand direction</span><span>2026</span></div>
+          </div>
+          <div class="floating-note note-a">BRAND<br><b>01</b></div>
+          <div class="floating-note note-b">VISUAL<br><b>02</b></div>
+        </div>
+      </div>
+      <div class="scroll-cue">Scroll to explore <span>↓</span></div>
+    </section>
 
-<section class="section fade-in">
-  <h2>Why Choose Us</h2>
-  <p>We focus on quality over quantity, delivering measurable results through structured systems and premium execution.</p>
-</section>
+    <section class="logo-strip">
+      <div class="container strip-inner">
+        <span>Brand identity</span><i></i><span>Social campaigns</span><i></i><span>Packaging</span><i></i><span>Digital design</span><i></i><span>Creative direction</span>
+      </div>
+    </section>
 
-<footer>
-  © 2026 EliteCorp. All Rights Reserved.
-</footer>
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="kicker">Selected work</span><h2>Ideas, given a <em>visual edge.</em></h2></div>
+          <p>From first sketch to final export, every project is built to communicate clearly and look unmistakably intentional.</p>
+        </div>
+        <div class="work-grid">
+          <article class="project project-large reveal">
+            <div class="project-visual visual-brand">
+              <span class="project-label">01 / BRANDING</span>
+              <div class="brand-lockup">NOVA<span>+</span></div>
+              <div class="brand-circle"></div>
+              <small>HEALTH • BEAUTY • LIFESTYLE</small>
+            </div>
+            <div class="project-info"><div><span>Nova+</span><small>Brand Identity</small></div><span class="arrow">↗</span></div>
+          </article>
+          <article class="project reveal delay-1">
+            <div class="project-visual visual-social">
+              <span class="project-label">02 / SOCIAL</span>
+              <div class="social-stack"><b>MOVE<br>YOUR<br>WORLD.</b><span>RUN CLUB / 2026</span></div>
+            </div>
+            <div class="project-info"><div><span>Motion Run</span><small>Campaign Graphics</small></div><span class="arrow">↗</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-visual visual-pack">
+              <span class="project-label">03 / PACKAGING</span>
+              <div class="pack-box"><b>FORM</b><span>daily objects</span><i></i></div>
+            </div>
+            <div class="project-info"><div><span>Form Objects</span><small>Packaging System</small></div><span class="arrow">↗</span></div>
+          </article>
+          <article class="project project-large reveal delay-1">
+            <div class="project-visual visual-editorial">
+              <span class="project-label">04 / EDITORIAL</span>
+              <div class="editorial-title">THE<br><em>NEW</em><br>STANDARD</div>
+              <div class="editorial-line"></div>
+              <small>Culture / Design / Ideas</small>
+            </div>
+            <div class="project-info"><div><span>Standard Journal</span><small>Editorial Art Direction</small></div><span class="arrow">↗</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<script>
-const elements = document.querySelectorAll('.fade-in');
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="kicker">What we do</span><h2>Design with a <em>purpose.</em></h2></div>
+          <p>Focused creative services for brands that need more than something that simply looks good.</p>
+        </div>
+        <div class="services-list">
+          <article class="service reveal"><span class="service-no">01</span><div><h3>Brand Identity</h3><p>Logos, visual systems, color direction, typography and brand guidelines built for consistency.</p></div><span class="service-icon">↗</span></article>
+          <article class="service reveal"><span class="service-no">02</span><div><h3>Social Media Design</h3><p>Scroll-stopping posts, carousels, ads, campaign kits and reusable content systems.</p></div><span class="service-icon">↗</span></article>
+          <article class="service reveal"><span class="service-no">03</span><div><h3>Marketing Collateral</h3><p>Brochures, flyers, business cards, menus, pitch decks and presentation design.</p></div><span class="service-icon">↗</span></article>
+          <article class="service reveal"><span class="service-no">04</span><div><h3>Packaging & Print</h3><p>Packaging concepts and print-ready artwork designed to stand out on shelf and screen.</p></div><span class="service-icon">↗</span></article>
+          <article class="service reveal"><span class="service-no">05</span><div><h3>Creative Direction</h3><p>Visual concepts, campaign direction and design systems that keep every touchpoint aligned.</p></div><span class="service-icon">↗</span></article>
+        </div>
+      </div>
+    </section>
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-  elements.forEach(el => {
-    const elementTop = el.getBoundingClientRect().top;
-    if (elementTop < windowHeight - 100) {
-      el.classList.add('show');
-    }
-  });
-}
+    <section class="section dark-section" id="process">
+      <div class="container">
+        <div class="section-head light reveal">
+          <div><span class="kicker">Our process</span><h2>Simple in structure.<br><em>Serious in detail.</em></h2></div>
+          <p>Good design does not need a complicated process. It needs clear thinking, strong communication and room to refine.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span>01</span><h3>Discover</h3><p>We learn your goals, audience, competitors and the real problem behind the brief.</p></div>
+          <div class="process-step reveal delay-1"><span>02</span><h3>Direction</h3><p>We establish the visual territory, references, mood and design route before execution.</p></div>
+          <div class="process-step reveal delay-2"><span>03</span><h3>Design</h3><p>We turn the chosen direction into polished, practical visual assets ready for use.</p></div>
+          <div class="process-step reveal delay-3"><span>04</span><h3>Deliver</h3><p>You receive organized final files, export formats and a system you can actually use.</p></div>
+        </div>
+      </div>
+    </section>
 
-window.addEventListener('scroll', revealOnScroll);
-</script>
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-statement reveal">
+          <span class="kicker">Why PixelCraft</span>
+          <h2>We don't decorate brands.<br>We <em>define</em> them.</h2>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <p class="large">A graphic design agency should make your business easier to recognize, easier to trust and harder to forget.</p>
+          <p>That's why our work balances creative experimentation with commercial clarity. Every layout, typeface, shape and color has a job.</p>
+          <div class="values"><span>Clarity</span><span>Originality</span><span>Consistency</span><span>Detail</span></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="kicker">Starting packages</span><h2>Choose your <em>creative lane.</em></h2></div>
+          <p>Clear starting points for common design needs. Custom scopes are available when your project needs something different.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal"><span class="price-tag">STARTER</span><h3>Social Kit</h3><p>For brands that need a consistent social presence.</p><strong>From $120</strong><ul><li>10 social designs</li><li>2 reusable templates</li><li>Color & type direction</li><li>Print + digital exports</li></ul><a href="#contact">Get started →</a></article>
+          <article class="price-card featured reveal delay-1"><span class="price-tag">MOST REQUESTED</span><h3>Brand Launch</h3><p>For a business ready to look like a real brand.</p><strong>From $350</strong><ul><li>Logo + identity system</li><li>Color & typography</li><li>Social profile kit</li><li>Mini brand guidelines</li></ul><a href="#contact">Build my brand →</a></article>
+          <article class="price-card reveal delay-2"><span class="price-tag">GROWTH</span><h3>Campaign System</h3><p>For launches that need a complete visual rollout.</p><strong>From $600</strong><ul><li>Campaign concept</li><li>Key visual direction</li><li>Ad + social asset set</li><li>Presentation-ready files</li></ul><a href="#contact">Plan a campaign →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonial">
+      <div class="container quote-wrap reveal">
+        <span class="quote-mark">“</span>
+        <blockquote>Great design is not about adding more. It's about making the right thing impossible to miss.</blockquote>
+        <div class="quote-line"><span></span><small>PIXELCRAFT STUDIO / CREATIVE PRINCIPLE</small></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-box reveal">
+        <div>
+          <span class="kicker">Have a project?</span>
+          <h2>Let's make something<br><em>worth remembering.</em></h2>
+          <p>Tell us what you're building, what you need designed and when you need it. We'll take it from there.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary large" href="mailto:hello@pixelcraft.studio">Email the studio <span>↗</span></a>
+          <a class="button outline-light large" href="https://wa.me/923149444884" target="_blank" rel="noopener">WhatsApp us <span>↗</span></a>
+          <small>hello@pixelcraft.studio · Remote worldwide</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top">
+      <a class="brand" href="#home"><span class="brand-mark"><i></i><i></i><i></i></span><span>Pixel<span>Craft</span></span></a>
+      <div class="footer-links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div class="socials"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Behance">BE</a><a href="#" aria-label="LinkedIn">LI</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> PixelCraft Studio. All rights reserved.</span><span>Designed with intention.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
